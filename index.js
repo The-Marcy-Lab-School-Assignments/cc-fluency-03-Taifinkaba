@@ -135,3 +135,20 @@ const sumAllFollowers = (users) => {
     return users.reduce((total, {followers}) => total + followers, 0)
 };
 console.log(sumAllFollowers(users));
+
+/*
+Q4
+
+*/
+const searchUsername = (users, searchTerm) => {
+    return users.filter(({username}) => username ===  searchTerm)
+}
+console.log(searchUsername(users, '@passaic_papi'))
+
+/*
+Q5
+
+*/
+const longWinded = (users) => {
+
+}
