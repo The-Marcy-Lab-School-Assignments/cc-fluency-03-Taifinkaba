@@ -131,6 +131,7 @@ C
 
 */
 const sumAllFollowers = (users) => {
-    return users.reduce((total, curr) => total + curr.followers, 0)
+    //return users.reduce((total, curr) => total + curr.followers, 0)
+    return users.reduce((total, {followers}) => total + followers, 0)
 };
 console.log(sumAllFollowers(users));
